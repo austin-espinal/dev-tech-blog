@@ -2,7 +2,6 @@
 
   ![badge](https://img.shields.io/badge/license-MIT-green)
   
-
 ## Description 
 
 This project was created to have a blog where devs or anyone in tech can share articles, their thoughts, and opinions. They can post articles, like, and comment on posts. This application uses Javascript, Node, and MySQL.

@@ -30,13 +30,14 @@ After downloading and extracting the project from the zip, open the terminal and
 * npm i mysql2 sequelize express-handlebars express-session
 * npm i connect-session-sequelize
 
-Make sure to duplicate the .env.EXAMPLE file first, then rename the duplicate as ".env". The user and password in the .env should match your MySQL user and password in order to use the application/ run the server.
+Make sure to duplicate the .env.EXAMPLE file first, then rename the duplicate as ".env". The user and password in the .env should match your MySQL user and password in order to use the application/ run the server. Also add secret message to the SECRET in env file.
 
 The database needed for the application will need to be set up as well. First, log into MYSQL via the terminal using "mysql -uroot -p". Enter in your password and type in "SOURCE db/schema.sql" when MYSQL is connected to create the techBlog_db database. Exit MYSQL shell by typing in "quit;". Next, start the server by typing "npm start" in the terminal to set up the tables for the database then press CTRL + C and type "Y" to stop the server. After, you will want to populate the database with data via seeding. Type "npm run seed" in the terminal to seed the database. Now the application is ready to be used.
 
 ## Usage 
 
-
+Start the application using "npm start" in the terminal if you cloned repo or downloaded it.
+You will start at the homepage which shows all posts. You must login or sign up in order to create post, edit post, or comment on posts. Once you login, If you click on a post title from the homepage, you can view all comments on that post and even create a comment. When, you click on the dashboard in the navigation bar, you will be taken to the dashboard where you see all of your posts and create new ones from the button at the bottom. At the dashboard, you can click on one of you posts to edit it. When you edit a post, you can update the text in the post or delete the post entirely. To logout, simply press the logout button in the navigation bar. 
 
 
 ## License  
@@ -53,7 +54,7 @@ No contribution necessary
 
 ## Tests
 
-insert testing
+to test the application, you can seed by using "npm run seeds" in terminal and start server. you could also signup and create your own posts and comment on them.
 
 ## Questions
 

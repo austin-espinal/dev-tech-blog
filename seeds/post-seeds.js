@@ -1,106 +1,55 @@
-const { Post } = require('../models');
+const {User, Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Donec posuere metus vitae ipsum.',
-    content: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    title: 'Full stack for you',
+    content: 'Donec posuere metus vitae ipsum.',
     user_id: 10
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    content: 'https://nasa.gov/donec.json',
+    title: 'HTML for the win',
+    content: 'Morbi non quam nec dui luctus rutrum.',
     user_id: 8
   },
   {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    content: 'https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx',
+    title: 'How to use the DOM',
+    content: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
     user_id: 1
   },
   {
-    title: 'Nunc purus.',
-    content: 'http://desdev.cn/enim/blandit/mi.jpg',
+    title: 'The Sequelizer',
+    content: 'Nunc purus.',
     user_id: 4
   },
   {
-    title: 'Pellentesque eget nunc.',
-    content: 'http://google.ca/nam/nulla/integer.aspx',
+    title: 'Mongo Bongo',
+    content: 'Pellentesque eget nunc.',
     user_id: 7
   },
   {
-    title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    content: 'https://stanford.edu/consequat.png',
+    title: 'Web Dev',
+    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
     user_id: 4
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    content: 'http://edublogs.org/non/ligula/pellentesque.js',
+    title: 'CSS pro',
+    content: 'In hac habitasse platea dictumst.',
     user_id: 1
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    content: 'http://ucla.edu/consequat/nulla.html',
+    title: 'Javascript vs Java',
+    content: 'Morbi non quam nec dui luctus rutrum.',
     user_id: 1
   },
   {
-    title: 'Duis ac nibh.',
-    content: 'http://theguardian.com/dui/vel/nisl/duis/ac/nibh.aspx',
+    title: 'Learn Ruby',
+    content: 'Duis ac nibh.',
     user_id: 9
   },
   {
-    title: 'Curabitur at ipsum ac tellus semper interdum.',
-    content: 'https://reverbnation.com/ligula/sit.jpg',
+    title: 'Not MySQL',
+    content: 'Curabitur at ipsum ac tellus semper interdum.',
     user_id: 5
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    content: 'http://china.com.cn/lectus/vestibulum.json',
-    user_id: 3
-  },
-  {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    content: 'http://networksolutions.com/nam/ultrices/libero/non/mattis/pulvinar.json',
-    user_id: 10
-  },
-  {
-    title: 'Donec dapibus.',
-    content: 'https://instagram.com/ac/neque/duis/bibendum/morbi/non.xml',
-    user_id: 8
-  },
-  {
-    title: 'Nulla tellus.',
-    content: 'https://lycos.com/natoque/penatibus/et.html',
-    user_id: 3
-  },
-  {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    content: 'https://gmpg.org/lorem.jpg',
-    user_id: 3
-  },
-  {
-    title:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    content: 'https://paginegialle.it/mattis/egestas.jsp',
-    user_id: 7
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    content: 'http://wikia.com/turpis/eget.jpg',
-    user_id: 6
-  },
-  {
-    title: 'Etiam justo.',
-    content: 'https://shareasale.com/quis.json',
-    user_id: 4
-  },
-  {
-    title: 'Nulla ut erat id mauris vulputate elementum.',
-    content: 'http://java.com/diam/neque/vestibulum/eget/vulputate/ut/ultrices.png',
-    user_id: 6
-  },
-  {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    content: 'https://java.com/at/nibh/in.png',
-    user_id: 7
   }
 ];
 

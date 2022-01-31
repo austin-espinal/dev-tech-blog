@@ -7,6 +7,9 @@
 
 This project was created to have a blog where devs or anyone in tech can share articles, their thoughts, and opinions. They can post articles, like, and comment on posts. This application uses Javascript, Node, and MySQL.
 
+() 
+The link above is a link to the application
+
 ## Table of Contents
 
 * [Installation](#installation)
@@ -23,7 +26,7 @@ You'll need to install MySQL for the project which instructions can be found at 
 After downloading and extracting the project from the zip, open the terminal and install these node packages
 
 * npm init -y
-* npm i dotenv express bcrypt nodemon handlebars
+* npm i dotenv express bcrypt handlebars
 * npm i mysql2 sequelize express-handlebars express-session
 * npm i connect-session-sequelize
 
@@ -33,8 +36,7 @@ The database needed for the application will need to be set up as well. First, l
 
 ## Usage 
 
-() 
-The link above is a link to the application direction video/showcase
+
 
 
 ## License  

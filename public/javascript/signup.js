@@ -9,8 +9,8 @@ async function signupFormHandler(event) {
         const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({
-                username,
-                password
+                username: username,
+                password: password
             }),
             headers: { 'Content-Type': 'application/json' }
         });

@@ -6,7 +6,7 @@
 
 This project was created to have a blog where devs or anyone in tech can share articles, their thoughts, and opinions. They can post articles, like, and comment on posts. This application uses Javascript, Node, and MySQL.
 
-() 
+(https://dev-tech-blog-ae.herokuapp.com/) 
 The link above is a link to the application
 
 ## Table of Contents
